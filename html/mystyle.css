@@ -1,0 +1,7 @@
+h1   { font-family: Tahoma; color: #00FF00; font-size: 18pt; font-style: italic;  font-weight: bold }
+
+.best        { font-family: serif; font-size: 8pt; text-decoration: underline; font-weight: bold }
+               
+p            { font-family: Arial; font-size: 12pt; color: #000080; text-align: justify; 
+               border-style: solid; border-width: 1px; padding-left: 4px; 
+               padding-right: 4px; padding-top: 1px; padding-bottom: 1px }

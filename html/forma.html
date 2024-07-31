@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+  <title>Φόρμα αποστολής δεδομένων</title>
+</head>
+<body>
+<form action="http://www.server.gr/sum.php" method="get">
+Εισόδημα <input type="text" name="noA" value="5" maxlength="10"/><br>
+Κωδικός   <input type="password" name="pass" value="" maxlength="10"/><br>
+Περιγραφή<br><textarea name="question" cols="20" rows="4"></textarea><br>
+
+<input type="radio" name="sex" value="male" />Άντρας <br />
+<input type="radio" name="sex" value="female" checked="checked" />Γυναίκα<br/>
+<input type="hidden" name="age" value="25"/>
+<input type="Submit" value="Αποστολή Φόρμας" /> 
+<input type="Reset"  value="Καθαρισμός Φόρμας" />
+<form> 
+</body></html>

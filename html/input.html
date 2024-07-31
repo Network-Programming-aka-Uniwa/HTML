@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <title>HTML Inputs</title>
+ <script type="text/javascript">
+    function showRangeValue(val) {
+      document.getElementById('rangeValue').value=val; 
+ }
+  </script>
+</head>
+<body>
+Φόρμα Αίτησης
+   <form method="post" lang="el" enctype="application/x-www-form-urlencoded" action="https://cv.example.gr/ergasia.php">
+ <p><label>Όνομα υποψηφίου: <input name="emplname" required placeholder="Πληκτρολόγησε το όνομα σου"></label></p>
+ <p><label>Telephone: <input type=tel name="empltel"></label></p>
+ <p><label>E-mail : <input type=email name="emplmail"></label></p>
+ <p><label>WWW : <input type=url name="webpage" placeholder="Η προσωπική σου σελίδα"></label></p>
+ <fieldset>
+  <legend> Εκπαίδευση </legend>
+  <p><label> <input type=radio name="edu" required value="first"> Πρωτοβάθμια</label></p>
+  <p><label> <input type=radio name="edu" required value="second"> Δευτεροβάθμια </label></p>
+  <p><label> <input type=radio name="edu" required value="third"> Τριτοβάθμια </label></p>
+  </fieldset>
+ <fieldset>
+ <p><label>Βάρος <input type="number" min="50" max="100" step="5" name="weight"></label></p>
+  <p><label>Ύψος : <input type="text" id="rangeValue" value="120"><input type="range" min="120" max="220" step="5" value="120" name="height" onchange="showRangeValue(this.value);"></label></p>
+ </fieldset>
+ <fieldset>
+  <legend> Στοιχεία </legend>
+  <p><label> <input type="checkbox" name="msc" value="msc"> Msc </label></p>
+  <p><label> <input type="checkbox" name="phd" value="phd"> Διδακτορικό </label></p>
+  <p><label> <input type="checkbox" name="ecdl" value="ecdl"> ECDL </label></p>
+  <p><label> <input type="checkbox" name="enlower" value="lower">Lower </label></p>
+  <p><label> <input type="checkbox" name="enprof" value="prof"> Proficiency </label></p>
+ </fieldset>
+ <p><label>Ημέρα επικοινωνίας: <input type="date" name="daycontact" required></label></p>
+ <p><label>Ωρα επικοινωνίας: <input type="time" min="11:00" max="21:00" step="900" name="timecontact" required></label></p>
+ <p><label>Εναλλακτική ώρα επικοινωνίας: <input type="datetime" name="altercontact" required></label></p>
+ <p><label>Αλλες πληροφορίες: <textarea name="comments"></textarea></label></p>
+ <p><label>Βιογραφικό: <input lang="el" type="file" name="bio" accept=".doc,.docx,.pdf"></textarea></label></p>
+ <p><button>Αποστολή</button></p>
+</form>
+</body>
+</html>
